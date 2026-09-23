@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linkly - URL Shortener</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <main class="container">
+
+        <div class="logo">
+            <span>↗</span> Linkly
+        </div>
+
+        <div class="badge">
+            ⚡ Fast & Simple
+        </div>
+
+        <h1>
+            Make your links
+            <span>short & simple.</span>
+        </h1>
+
+        <p class="subtitle">
+            Turn long, complicated URLs into clean and shareable links in seconds.
+        </p>
+
+        <div class="url-box">
+
+            <div class="input-wrapper">
+                <span class="link-icon">🔗</span>
+
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="Paste your long URL here..."
+                >
+            </div>
+
+            <button onclick="shortenURL()">
+                Shorten URL
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>
+                    <h3>Instant</h3>
+                    <p>Generate links in seconds</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div>
+                    <h3>Secure</h3>
+                    <p>Your links stay protected</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div>
+                    <h3>Trackable</h3>
+                    <p>Monitor your link clicks</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="history">
+
+    <div class="history-header">
+        <h2>Your URL History</h2>
+
+        <button class="refresh-btn" onclick="loadHistory()">
+            ↻ Refresh
+        </button>
+    </div>
+
+    <div id="historyList">
+        <p class="empty-history">
+            No shortened URLs yet.
+        </p>
+    </div>
+
+</section>
+
+        <footer>
+            Built with HTML • CSS • JavaScript
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
