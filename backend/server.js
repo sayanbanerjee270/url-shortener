@@ -42,7 +42,7 @@ app.post("/shorten", async (req, res) => {
 
         await newUrl.save();
 
-        const shortUrl = `http://localhost:${process.env.PORT}/${shortCode}`;
+        const shortUrl = `https://url-shortener-backend-kkn1.onrender.com/${shortCode}`;
 
         res.json({
             originalUrl: url,

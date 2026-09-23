@@ -14,7 +14,7 @@ async function shortenURL() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/shorten", {
+        const response = await fetch("https://url-shortener-backend-kkn1.onrender.com/shorten", {
             method: "POST",
 
             headers: {
@@ -78,7 +78,7 @@ async function loadHistory() {
 
     try {
 
-        const response = await fetch("http://localhost:5000/urls");
+        const response = await fetch("https://url-shortener-backend-kkn1.onrender.com/urls");
 
         const urls = await response.json();
 
@@ -104,10 +104,10 @@ async function loadHistory() {
                     </p>
 
                     <a
-                        href="http://localhost:5000/${item.shortCode}"
+                        href="https://url-shortener-backend-kkn1.onrender.com/${item.shortCode}"
                         target="_blank"
                     >
-                        http://localhost:5000/${item.shortCode}
+                        https://url-shortener-backend-kkn1.onrender.com/${item.shortCode}
                     </a>
 
                     <span class="clicks">
@@ -119,14 +119,14 @@ async function loadHistory() {
                 <div class="history-actions">
 
                     <button
-                        onclick="copyURL('http://localhost:5000/${item.shortCode}')"
+                        onclick="copyURL('https://url-shortener-backend-kkn1.onrender.com/${item.shortCode}')"
                     >
                         Copy
                     </button>
 
                     <button
                         onclick="window.open(
-                            'http://localhost:5000/${item.shortCode}',
+                            'https://url-shortener-backend-kkn1.onrender.com/${item.shortCode}',
                             '_blank'
                         )"
                     >
